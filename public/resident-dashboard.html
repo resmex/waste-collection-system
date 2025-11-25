@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup Request - Customer App</title>
+    <link rel="stylesheet" href="../assets/css/resident.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="welcome-text">Hi, <strong>Maria</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge"></div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <div class="map-container" id="map">
+                    <div class="map-marker marker-pickup">📍</div>
+                    <div class="map-marker marker-user">👤</div>
+                    <div class="map-labels label-pickup">IFM Cafeteria</div>
+                    <div class="map-labels label-you">You are here</div>
+                </div>
+                
+                <div class="location-info">
+                    <span class="location-icon">❤️</span>
+                    <div class="location-text">
+                        <div class="location-name">IFM Cafeteria, Kivukoni</div>
+                        <div class="location-distance">📍 0.8 km away from you</div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Estimated Time</div>
+                        <div class="info-value">15 min</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Distance</div>
+                        <div class="info-value">0.8 km</div>
+                    </div>
+                </div>
+
+                <button class="button button-primary" onclick="requestPickup()">Request pickup</button>
+                <button class="button button-secondary" onclick="trackDriver()">Track driver</button>
+
+                <div class="status-section">
+                    <div class="status-label">Driver status</div>
+                    <div class="status-badge" id="driverStatus">on transit</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="driver-info">
+                    <div class="driver-title">Your Driver</div>
+                    <div class="driver-name">Michael K.</div>
+                    <div class="driver-vehicle">🚛 Toyota Hiace • T 456 XYZ</div>
+                </div>
+
+                <div class="rating-card">
+                    <div class="rating-label">Rate driver</div>
+<div class="stars" id="starRating">
+  <span class="star" data-rating="1">☆</span>
+  <span class="star" data-rating="2">☆</span>
+  <span class="star" data-rating="3">☆</span>
+  <span class="star" data-rating="4">☆</span>
+  <span class="star" data-rating="5">☆</span>
+</div>
+<input type="hidden" id="selectedRating" name="rating" value="0">
+
+                </div>
+
+                <div class="feedback-label">Feedback:</div>
+                <textarea class="feedback-textarea" id="feedbackText" placeholder="Share your experience with the service..."></textarea>
+                
+                <button class="button button-primary" onclick="submitFeedback()">Submit your feedback</button>
+            </div>
+        </div>
+    </div>
+<script src="resident.js"></script>
+</body>    
+</body>
+</html>

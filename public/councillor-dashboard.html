@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Councillor Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/councillor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="welcome-text">Welcome, <strong>Councillor</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge"></div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Request</div>
+                <div class="stat-value">48</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Completed</div>
+                <div class="stat-value green">42</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Pending</div>
+                <div class="stat-value yellow">6</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">pickup history</div>
+                <div class="stat-value">📋</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="card">
+                    <div class="card-title">Pickup requests</div>
+                    <div class="scroll-container">
+                        <div class="pickup-item">
+                            <div class="pickup-info">
+                                <div class="pickup-avatar"></div>
+                                <div class="pickup-details">
+                                    <h4>Valleth</h4>
+                                    <div class="pickup-location">Mwembezi, Kariakoo</div>
+                                    <div class="pickup-date">9-10-2023 11:00</div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-completed">Completed</div>
+                        </div>
+                        <div class="pickup-item">
+                            <div class="pickup-info">
+                                <div class="pickup-avatar"></div>
+                                <div class="pickup-details">
+                                    <h4>Jumanne</h4>
+                                    <div class="pickup-location">Tandale, Manzese</div>
+                                    <div class="pickup-date">9-10-2023 13:00</div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-progress">Inprogress</div>
+                        </div>
+                        <div class="pickup-item">
+                            <div class="pickup-info">
+                                <div class="pickup-avatar"></div>
+                                <div class="pickup-details">
+                                    <h4>Zakayo</h4>
+                                    <div class="pickup-location">Magomani</div>
+                                    <div class="pickup-date">10-10-2023 11:00</div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-pending">pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <div class="card-title">Truck owners</div>
+                    <div class="truck-owner-item">
+                        <div class="owner-info">
+                            <div class="owner-avatar"></div>
+                            <div class="owner-details">
+                                <h4>Remmy</h4>
+                                <div class="owner-vehicles">Total vehicles: <strong>12</strong></div>
+                            </div>
+                        </div>
+                        <button class="view-btn">View</button>
+                    </div>
+                    <div class="truck-owner-item">
+                        <div class="owner-info">
+                            <div class="owner-avatar"></div>
+                            <div class="owner-details">
+                                <h4>Ahmed</h4>
+                                <div class="owner-vehicles">Total vehicles: <strong>4</strong></div>
+                            </div>
+                        </div>
+                        <button class="view-btn">View</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Customer Feedback</div>
+                    <div class="scroll-container">
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <div class="feedback-name">Maria Johnson</div>
+                            </div>
+                            <div class="feedback-text">Your service is awesome, drivers are always on time. They pick clearly.</div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <div class="feedback-name">John Doe</div>
+                            </div>
+                            <div class="feedback-text">Drivers leave some of garbage behind they are unfriendly try to change some of your pick up guy.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="councillor.js">
+      
+    </script>
+</body>
+</html>

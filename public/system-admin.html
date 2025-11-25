@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="welcome-text">Welcome, <strong>Administrator</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge">
+                    <div class="notification-count">6</div>
+                </div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Active users</div>
+                <div class="stat-value cyan">128</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Alerts</div>
+                <div class="stat-value orange">7</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Uptime</div>
+                <div class="stat-value green">99.9%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Errors</div>
+                <div class="stat-value red">5</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <div class="card-title">System maintainance</div>
+                <div class="maintenance-buttons">
+                    <button class="maintenance-btn dark">Monitor Logs</button>
+                    <button class="maintenance-btn blue">Restart services</button>
+                    <button class="maintenance-btn purple">Backup database</button>
+                </div>
+            </div>
+
+            <div class="card full-width">
+                <div class="card-title">User management</div>
+                <div class="scroll-container">
+                    <div class="user-item">
+                        <div class="user-header">
+                            <div class="user-info">
+                                <div class="user-avatar"></div>
+                                <div class="user-details">
+                                    <h4>Michael K.</h4>
+                                    <div class="user-email">michael@gmail.com</div>
+                                    <div class="user-role">Role: <strong>Driver</strong></div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-active">Active</div>
+                        </div>
+                        <div class="user-tags">
+                            <span class="tag suspend">Suspend</span>
+                            <span class="tag warn">Warn</span>
+                            <span class="tag activity">Activity</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="action-btn edit">Edit User</button>
+                            <button class="action-btn delete">Delete User</button>
+                        </div>
+                    </div>
+
+                    <div class="user-item">
+                        <div class="user-header">
+                            <div class="user-info">
+                                <div class="user-avatar"></div>
+                                <div class="user-details">
+                                    <h4>Abdalla Juma</h4>
+                                    <div class="user-email">abdallaj@gmail.com</div>
+                                    <div class="user-role">Role: <strong>Resident</strong></div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-suspended">Suspended</div>
+                        </div>
+                        <div class="user-tags">
+                            <span class="tag resident">Resident</span>
+                            <span class="tag warn">Warn</span>
+                            <span class="tag activity">Activity</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="action-btn activate">Activate User</button>
+                            <button class="action-btn edit">Edit User</button>
+                            <button class="action-btn delete">Delete User</button>
+                        </div>
+                    </div>
+
+                    <div class="user-item">
+                        <div class="user-header">
+                            <div class="user-info">
+                                <div class="user-avatar"></div>
+                                <div class="user-details">
+                                    <h4>Sarah Johnson</h4>
+                                    <div class="user-email">sarah.j@gmail.com</div>
+                                    <div class="user-role">Role: <strong>Driver</strong></div>
+                                </div>
+                            </div>
+                            <div class="status-badge status-active">Active</div>
+                        </div>
+                        <div class="user-tags">
+                            <span class="tag suspend">Suspend</span>
+                            <span class="tag warn">Warn</span>
+                            <span class="tag activity">Activity</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="action-btn edit">Edit User</button>
+                            <button class="action-btn delete">Delete User</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js">
+        
+    </script>
+</body>
+</html>

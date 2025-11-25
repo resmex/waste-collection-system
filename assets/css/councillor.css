@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #4caf50;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.menu-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+}
+
+.welcome-text {
+    font-size: 16px;
+}
+
+.welcome-text strong {
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification-badge {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.notification-badge::before {
+    content: "🔔";
+    font-size: 18px;
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.stat-card:hover {
+    border-color: #4caf50;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.stat-value.green {
+    color: #4caf50;
+}
+
+.stat-value.yellow {
+    color: #ffc107;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pickup-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.pickup-item:hover {
+    background: #f0f0f0;
+}
+
+.pickup-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pickup-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    flex-shrink: 0;
+}
+
+.pickup-details h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.pickup-location {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 2px;
+}
+
+.pickup-location::before {
+    content: "📍";
+    font-size: 11px;
+}
+
+.pickup-date {
+    font-size: 11px;
+    color: #999;
+}
+
+.status-badge {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 100px;
+}
+
+.status-completed {
+    background: #4caf50;
+    color: white;
+}
+
+.status-progress {
+    background: #7986cb;
+    color: white;
+}
+
+.status-pending {
+    background: #ffd54f;
+    color: #333;
+}
+
+.truck-owner-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.truck-owner-item:hover {
+    background: #f0f0f0;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.owner-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    flex-shrink: 0;
+}
+
+.owner-details h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.owner-vehicles {
+    font-size: 12px;
+    color: #666;
+}
+
+.view-btn {
+    padding: 8px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background: #222;
+}
+
+.feedback-item {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.feedback-item:hover {
+    background: #f0f0f0;
+}
+
+.feedback-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.feedback-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.feedback-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.feedback-text {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1400px) {
+    .main-content {
+        grid-template-columns: 2fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 2fr;
+    }
+    
+    .container {
+        padding: 8px;
+    }
+    
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+}

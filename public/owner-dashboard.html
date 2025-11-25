@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/owner.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="welcome-text">Welcome, <strong>Remmy</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge"></div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+        <div class="card">
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">My drivers</div>
+                <div class="stat-value orange">8</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">My vehicles</div>
+                <div class="stat-value orange">9</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Assigned trips</div>
+                <div class="stat-value orange">36</div>
+            </div>
+        </div>
+        
+
+        <div class="action-grid">
+            <div class="action-card">
+                <div class="action-label">Register vehicle</div>
+                <div class="action-icon">⬇️</div>
+            </div>
+            <div class="action-card">
+                <div class="action-label">View trips</div>
+                <div class="action-icon">🚛</div>
+            </div>
+            <div class="action-card">
+                <div class="action-label">Pending</div>
+                <div class="stat-value yellow">2</div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="card">
+                    <div class="card-title">Trips assigned to me</div>
+                    <div class="scroll-container">
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-name">Maria Massawe</div>
+                                <div class="trip-location">Ilala-Kivukoni</div>
+                                <div class="trip-date">16-05-2025 - 18:33</div>
+                            </div>
+                            <div class="trip-actions">
+                                <button class="trip-btn assign">Assign to a driver</button>
+                                <button class="trip-btn history">History</button>
+                            </div>
+                        </div>
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-name">Juma Amosi</div>
+                                <div class="trip-location">Tanzi-Kivukoni</div>
+                                <div class="trip-date">16-05-2025 - 17:22</div>
+                            </div>
+                            <div class="trip-actions">
+                                <button class="trip-btn assign">Assign to a driver</button>
+                                <button class="trip-btn history">History</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Trips assigned to driver</div>
+                    <div class="scroll-container">
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-name">Valleth</div>
+                                <div class="trip-location">Mwembezi-Kariakoo</div>
+                            </div>
+                            <div class="status-badge status-completed">Completed</div>
+                        </div>
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-name">Jumanne</div>
+                                <div class="trip-location">Kinyilo-Mwabaza</div>
+                            </div>
+                            <div class="status-badge status-progress">Inprogress</div>
+                        </div>
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-name">Asha</div>
+                                <div class="trip-location">Ilala-Kivukoni</div>
+                            </div>
+                            <div class="status-badge status-pending">pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <div class="card-title">My drivers</div>
+                    <div class="driver-item">
+                        <div class="driver-avatar"></div>
+                        <div class="driver-details">
+                            <div class="driver-name">Michael</div>
+                            <div class="driver-stats">Total trips: <strong>31</strong> | Ratings: <strong>4.5</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Customer Feedback</div>
+                    <div class="scroll-container">
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <div class="feedback-name">Sarah Johnson</div>
+                            </div>
+                            <div class="feedback-text">Your service is awesome, drivers are always on time. They pick clearly.</div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <div class="feedback-name">Michael Brown</div>
+                            </div>
+                            <div class="feedback-text">Drivers leave some of garbage behind they are unfriendly try to change some of your pick up guy.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="owner.js"></script>
+</body>
+</html>

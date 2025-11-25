@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Waste Collection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../assets/css/auth.css">
+
+  <style>
+   body {
+  background: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WASTE COLLECTION SYSTEM</h1>
+    <img src="../assets/images/logo.png" alt="e-waste logo" class="logo">
+
+    
+    <form action="login.php" method="POST">
+
+        <h2>Welcome back!</h2>
+        <p>login to your account to continue</p>
+      
+      <label for="identifier">Email or Phone:</label>
+      <input type="text" name="identifier" placeholder="Enter email or phone" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit">Login</button>
+
+      <p><a href="forgot-password.php">Forgot Password?</a></p>
+
+      <p>Don't have an account? <a href="register.html">Create one here</a></p>
+    </form>
+  </div>
+</body>
+</html>

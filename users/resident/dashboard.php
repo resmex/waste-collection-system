@@ -1,0 +1,17 @@
+C:\xampp\htdocs\e-waste\api\_helpers.php
+C:\xampp\htdocs\e-waste\api\assign-driver.php
+C:\xampp\htdocs\e-waste\api\assign-driver.php
+C:\xampp\htdocs\e-waste\api\assign-request.php
+C:\xampp\htdocs\e-waste\api\get-request.php
+C:\xampp\htdocs\e-waste\api\municipal-get-dashboard-data.php
+C:\xampp\htdocs\e-waste\api\notifications.php
+C:\xampp\htdocs\e-waste\api\submit-feedback.php
+C:\xampp\htdocs\e-waste\api\track-driver.php
+C:\xampp\htdocs\e-waste\api\update-location.php
+C:\xampp\htdocs\e-waste\api\update-status.php
+C:\xampp\htdocs\e-waste\assets\js\resident.js
+C:\xampp\htdocs\e-waste\assets\js\municipal.js
+C:\xampp\htdocs\e-waste\includes\auth-check.php
+C:\xampp\htdocs\e-waste\includes\db.php
+C:\xampp\htdocs\e-waste\public\admin-dashboard.php
+C:\xampp\htdocs\e-waste\public\resident-dashboard.php

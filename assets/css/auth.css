@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  background: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #212121;
+}
+
+
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  /* margin-bottom: 16px; */
+}
+
+h1 {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #212121;
+  margin-bottom: 16px;
+  font: semi-bold;
+}
+form {
+  margin-top: 16px;
+  text-align: center;
+}
+
+form input[type="email"],
+form input[type="tel"],
+form input[type="text"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #8d6e63;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #212121;
+  font-size: 0.97rem;
+}
+
+form label input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+  background: #2e7031;
+}
+
+form p {
+  margin-top: 18px;
+  font-size: 0.97rem;
+}
+
+form a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/driver.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="welcome-text">Welcome, <strong>Michael</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge">
+                    <div class="notification-count">3</div>
+                </div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Total trips</div>
+                        <div class="stat-value">22</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Today</div>
+                        <div class="stat-value green">8</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Ratings</div>
+                        <div class="stat-value yellow">4.5</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="map-card">
+                <div class="map-container">
+                    <div class="map-info">
+                        📍 Institute of Finance Management
+                    </div>
+                    <svg class="map-route" viewBox="0 0 400 300">
+                        <path class="route-line" d="M 50 250 Q 150 200 200 150 T 350 50" />
+                    </svg>
+                    <div class="map-marker marker-start">🔵</div>
+                    <div class="map-marker marker-current">🚗</div>
+                    <div class="map-marker marker-end">📍</div>
+                </div>
+            </div>
+                    <div class="card-title">Trip status</div>
+                    <div class="status-buttons">
+                        <button class="status-btn active">start</button>
+                        <button class="status-btn">transit</button>
+                        <button class="status-btn">on load</button>
+                    </div>
+                </div>
+                
+
+                <div class="card">
+                    <div class="card-title">Assigned trips</div>
+                    <div>
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-avatar"></div>
+                                <div class="trip-details">
+                                    <h4>Maria</h4>
+                                    <div class="trip-location">IFM Cafeteria, Kivukoni</div>
+                                </div>
+                            </div>
+                            <button class="trip-btn start">Start</button>
+                        </div>
+                        <div class="trip-item">
+                            <div class="trip-info">
+                                <div class="trip-avatar"></div>
+                                <div class="trip-details">
+                                    <h4>Valleth</h4>
+                                    <div class="trip-location">Mwembezi, Kariakoo</div>
+                                </div>
+                            </div>
+                            <button class="trip-btn completed">Completed</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">View Feedback</div>
+                    <div class="scroll-container">
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <strong>Sarah K.</strong>
+                            </div>
+                            <div class="feedback-text">Your service is awesome, drivers are always on time. They pick clearly.</div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-header">
+                                <div class="feedback-avatar"></div>
+                                <strong>John M.</strong>
+                            </div>
+                            <div class="feedback-text">Drivers leave some of garbage behind they are unfriendly try to change some of your pick up guy.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="driver.js">
+       
+    </script>
+</body>
+</html>

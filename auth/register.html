@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create your account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../assets/css/auth.css">
+
+    
+
+
+</head>
+</head>
+<body>
+  <div class="container">
+   <b> <h1>WASTE COLLECTION SYSTEM</h1></b>
+    <img src="../assets/images/logo.png" alt="e-waste logo" class="logo">
+    
+  <h2>Create account</h2>
+    <form action="register.php" method="POST">
+        
+<label for="full_name">Full name:</label>
+<input type="text" name="full_name" placeholder="Your full name" required>
+
+    
+    <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="ewaste@gmail.com" required>
+
+       <label for="phone">Phone:</label>
+      <input type="tel" name="phone" placeholder="0712345678" required>
+
+       <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Password" required>
+         <label for="confirm_password">Confirm Password:</label>
+      <input type="password" name="confirm_password" placeholder="Confirm password" required>
+
+      <!-- <label for="role">Register as:</label>
+      <select name="role" required>
+        <option value="">-- Select Role --</option>
+        <option value="resident">Resident</option>
+        <option value="driver">Driver</option>
+        <option value="truck_owner">Truck Owner</option>
+        <option value="councillor">Ward Councillor</option>
+        <option value="municipal_admin">Municipal Admin</option>
+        <option value="administrator">Administrator</option>
+      </select>
+
+      <label> -->
+        <input type="checkbox" name="agree" required>
+        I agree to the terms and conditions
+      </label>
+
+      <button type="submit">Register</button>
+
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+</body>
+</html>

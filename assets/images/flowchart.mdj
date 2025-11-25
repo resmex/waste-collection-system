@@ -1,0 +1,53 @@
+@startuml
+title Waste Collection System - Main Flow
+
+start
+
+:'Resident' submits pickup request
+(note right: Location, waste type,\npreferred pickup time)
+
+if (Is request valid?) then (No)
+  :Show error message;
+  stop
+else (Yes)
+  :Save request with status = 'pending';
+  :Notify Municipal Admin;
+endif
+
+:'Municipal Admin' reviews request;
+
+if (Assign to truck owner?) then (Yes)
+  :Create assignment for Truck Owner;
+  :Update status = 'assigned_to_owner';
+else (No)
+  :Request stays in pending queue;
+  stop
+endif
+
+:'Truck Owner' logs in;
+:'Truck Owner' selects a driver;
+
+if (Driver available?) then (Yes)
+  :Assign driver to request;
+  :Update status = 'assigned_to_driver';
+  :Notify Driver and Resident;
+else (No)
+  :Update status = 'waiting_for_driver';
+  stop
+endif
+
+:'Driver' opens trip details;
+:'Driver' starts trip;
+:Update status = 'in_progress';
+:Send live location updates;
+
+:'Driver' reaches resident location;
+:'Driver' collects waste;
+:Update status = 'completed';
+
+:'Resident' receives completion notification;
+:'Resident' submits rating and feedback;
+
+stop
+
+@enduml

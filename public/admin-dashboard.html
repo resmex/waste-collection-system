@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/municipal.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="menu-icon">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="welcome-text">Welcome, <strong id="adminName">Admin</strong></div>
+            </div>
+            <div class="header-right">
+                <div class="notification-badge" id="notifCount"></div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total trips</div>
+                <div class="stat-value" id="statTotalTrips">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">New requests</div>
+                <div class="stat-value" id="statNew">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Pending Approval</div>
+                <div class="stat-value yellow" id="statPendingVeh">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Pickup history</div>
+                <div class="stat-icon">🕐</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="card">
+                    <div class="card-title">Approves vehicles</div>
+                    <div class="scroll-container" id="vehicleApprovals">
+                        <!-- dynamic vehicle approvals go here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <div class="card-title">Requests</div>
+                    <div class="scroll-container" id="requestsList">
+                        <!-- dynamic requests go here -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Customer Feedback</div>
+                    <div class="scroll-container" id="feedbackList">
+                        <!-- dynamic feedback goes here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/municipal.js"></script>
+</body>
+
+</html>
